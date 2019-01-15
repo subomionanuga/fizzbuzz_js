@@ -8,4 +8,6 @@
   }
 }
 
-console.log(fizzbuzz(1..20))
+for(num=1;num<20;num++) {
+console.log(fizzBuzz(num))
+}
