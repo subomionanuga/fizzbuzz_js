@@ -9,13 +9,20 @@ describe('fizzBuzz', function() {
     expect(fizzBuzz(2)).toEqual(2)
   })
 
-  it("tests for a different value", function() {
-    expect(fizzBuzz(10)).toEqual(10)
+  // it("tests for a different value", function() {
+  //   expect(fizzBuzz(10)).toEqual(10)
+  // })
+  //
+  // it("tests for a different value", function() {
+  //   expect(fizzBuzz(100)).toEqual(100)
+  // })
+
+  it("checks that multiples of 3 return fizz", function() {
+    expect(fizzBuzz(3)).toEqual('fizz')
   })
 
-  it("tests for a different value", function() {
-    expect(fizzBuzz(100)).toEqual(100)
+  it("checks that multiples of 5 return fizz", function() {
+    expect(fizzBuzz(5)).toEqual('buzz')
   })
-
 
 })
