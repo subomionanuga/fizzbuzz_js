@@ -1,24 +1,29 @@
 describe('fizzBuzz', function() {
-  it("returns a number", function() {
-    var a = 1
-    expect(a).toEqual(1)
+
+  describe('multiples of 3 returns fizz', function() {
+    it("checks that 3 returns fizz", function() {
+      expect(fizzBuzz(3)).toEqual('fizz')
+    })
+    it("checks that 9 returns fizz", function() {
+      expect(fizzBuzz(9)).toEqual('fizz')
+    })
   })
 
-  it("tests a variable's return value", function() {
-
-    expect(fizzBuzz(2)).toEqual(2)
+  describe('multiples of 5 returns buzz', function() {
+    it("checks that 5 returns buzz", function() {
+      expect(fizzBuzz(5)).toEqual('buzz')
+    })
+    it("checks that 10 returns buzz", function() {
+      expect(fizzBuzz(10)).toEqual('buzz')
+    })
   })
 
-  it("checks that multiples of 3 return fizz", function() {
-    expect(fizzBuzz(3)).toEqual('fizz')
+  describe("checks that multiples of 3 and 5 return fizzbuzz", function() {
+    it("checks that 15 returns fizzbuzz", function() {
+      expect(fizzBuzz(15)).toEqual('fizzbuzz')
+    })
+    it("checks that 30 returns fizzbuzz", function() {
+      expect(fizzBuzz(30)).toEqual('fizzbuzz')
+    })
   })
-
-  it("checks that multiples of 5 return fizz", function() {
-    expect(fizzBuzz(5)).toEqual('buzz')
-  })
-
-  it("checks that multiples of 3 and 5 return fizzbuzz", function() {
-    expect(fizzBuzz(15)).toEqual('fizzbuzz')
-  })
-
 })
